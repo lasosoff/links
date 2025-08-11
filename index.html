@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La SoSo</title>
+  <!-- Fonte cursiva e sans-serif do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #b4b2b2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-img {
+      width: 330px;
+      max-width: 80vw;
+      border-radius: 32px 32px 0 0;
+      object-fit: cover;
+      margin-bottom: -38px;
+      box-shadow: 0 8px 24px 0 rgba(80,80,80,0.07);
+      background: #b4b2b2;
+    }
+    .logo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      color: #222;
+      margin: 40px 0 40px 0;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-align: center;
+      z-index: 2;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      width: 380px;
+      max-width: 90vw;
+    }
+    .btn-link {
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      background: #ddd1cb;
+      color: #222;
+      border-radius: 40px;
+      border: 2px solid #a59b94;
+      padding: 21px 0;
+      margin: 0;
+      font-size: 1.35rem;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: underline;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 10px 0 rgba(80,80,80,0.055);
+      cursor: pointer;
+      letter-spacing: 1.2px;
+      display: block;
+      user-select: none;
+    }
+    .btn-link:hover, .btn-link:focus {
+      background: #e7d5ca;
+      color: #000;
+      box-shadow: 0 4px 20px 0 rgba(80,80,80,0.11);
+    }
+    @media (max-width: 500px) {
+      .hero-img { width: 98vw; }
+      .links { width: 98vw;}
+      .logo { font-size: 2.3rem;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Substitua o src pelo caminho correto da sua imagem -->
+    <img src="hero.jpg" alt="La SoSo" class="hero-img">
+    <div class="logo">La SoSo</div>
+    <div class="links">
+      <a href="https://www.shopltk.com/explore/SoSo" target="_blank">LTK</a>
+      <a href="https://www.sofiamalheiro.com/" class="btn-link" target="_blank">MODEL BOOK</a>
+      <a href="https://www.tiktok.com/@la_sosoff" class="btn-link" target="_blank">TIKTOK</a>
+      <a href="https://www.instagram.com/la_sosoff/" class="btn-link" target="_blank">INSTAGRAM</a>
+      <a href="https://fr.pinterest.com/la_sosoff" class="btn-link" target="_blank">PINTEREST</a>
+      <a href="mailto:soso@lasosoff.com" class="btn-link" target="_blank">CONTACT ME</a>
+    </div>
+  </div>
+</body>
+</html>
