@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La SoSo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('hero.png.png') no-repeat center top;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #000;
+        }
+
+        .logo {
+            font-family: 'Alex Brush', cursive;
+            font-size: 60px;
+            margin-top: 360px; /* ajusta para alinhar com a imagem */
+            margin-bottom: 40px;
+        }
+
+        .button {
+            display: block;
+            margin: 15px auto;
+            padding: 14px 30px;
+            width: 250px;
+            background-color: rgba(200, 180, 170, 0.8);
+            border-radius: 40px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: rgba(200, 180, 170, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">La SoSo</div>
+
+    <a class="button" href="https://www.shopltk.com/explore/SoSo" target="_blank">LTK</a>
+    <a class="button" href="https://www.sofiamalheiro.com/" target="_blank">Model Book</a>
+    <a class="button" href="https://www.tiktok.com/@la_sosoff" target="_blank">TikTok</a>
+    <a class="button" href="https://www.instagram.com/la_sosoff/" target="_blank">Instagram</a>
+    <a class="button" href="https://fr.pinterest.com/la_sosoff" target="_blank">Pinterest</a>
+    <a class="button" href="mailto:soso@lasosoff.com">Contact Me</a>
+
+</body>
+</html>
