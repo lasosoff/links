@@ -1,58 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La SoSo</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-        
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('hero.png.png') no-repeat center top;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: #000;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La SoSo — Links</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --btn-bg:#d9c7be;
+      --btn-text:#1a1a1a;
+      --btn-border:#5a4f49;
+      --shadow:0 10px 25px rgba(0,0,0,.18);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif;
+      color:#222;
+      /* se a tua imagem for hero.png.png troca a linha abaixo para url('hero.png.png') */
+      background: url('hero.png') top center / cover no-repeat fixed, #bfbaba;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:48px 18px;
+    }
+    main{
+      width:min(560px, 92vw);
+      backdrop-filter: blur(2px);
+    }
+    h1{
+      font-family: "Playfair Display", serif;
+      font-weight:600;
+      font-size: clamp(40px, 8vw, 72px);
+      line-height:1;
+      letter-spacing: .04em;
+      color:#1f1f1f;
+      text-align:center;
+      margin: 0 0 22px;
+    }
+    .stack{
+      display:grid;
+      gap:16px;
+    }
+    a.btn{
+      display:block;
+      text-align:center;
+      text-decoration:none;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      padding: 20px 18px;
+      border-radius: 28px;
+      border: 1.5px solid var(--btn-border);
+      font-weight:600;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      box-shadow: var(--shadow);
+      transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
+      backdrop-filter: blur(1px);
+    }
+    a.btn:hover{ transform: translateY(-2px); box-shadow: 0 14px 28px rgba(0,0,0,.22); }
+    a.btn:active{ transform: translateY(0); box-shadow: var(--shadow); }
 
-        .logo {
-            font-family: 'Alex Brush', cursive;
-            font-size: 60px;
-            margin-top: 360px; /* ajusta para alinhar com a imagem */
-            margin-bottom: 40px;
-        }
-
-        .button {
-            display: block;
-            margin: 15px auto;
-            padding: 14px 30px;
-            width: 250px;
-            background-color: rgba(200, 180, 170, 0.8);
-            border-radius: 40px;
-            text-decoration: none;
-            color: black;
-            border: 1px solid black;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .button:hover {
-            background-color: rgba(200, 180, 170, 1);
-        }
-    </style>
+    footer{
+      margin-top:14px;
+      text-align:center;
+      font-size:12px;
+      opacity:.65;
+    }
+  </style>
 </head>
 <body>
-    <div class="logo">La SoSo</div>
+  <main>
+    <h1>La SoSo</h1>
 
-    <a class="button" href="https://www.shopltk.com/explore/SoSo" target="_blank">LTK</a>
-    <a class="button" href="https://www.sofiamalheiro.com/" target="_blank">Model Book</a>
-    <a class="button" href="https://www.tiktok.com/@la_sosoff" target="_blank">TikTok</a>
-    <a class="button" href="https://www.instagram.com/la_sosoff/" target="_blank">Instagram</a>
-    <a class="button" href="https://fr.pinterest.com/la_sosoff" target="_blank">Pinterest</a>
-    <a class="button" href="mailto:soso@lasosoff.com">Contact Me</a>
+    <section class="stack" aria-label="links principais">
+      <!-- TROCA os href pelos teus links reais -->
+      <a class="btn" href="https://www.shopltk.com/explore/la_sosoff" target="_blank" rel="noopener" aria-label="LTK">LTK</a>
+      <a class="btn" href="https://www.sofiamalheiro.com/" target="_blank" rel="noopener" aria-label="Model Book">Model Book</a>
+      <a class="btn" href="https://www.tiktok.com/@la_sosoff" target="_blank" rel="noopener" aria-label="TikTok">@TikTok</a>
+      <a class="btn" href="https://www.instagram.com/la_sosoff" target="_blank" rel="noopener" aria-label="Instagram">@Instagram</a>
+      <a class="btn" href="https://www.pinterest.com/la_sosoff" target="_blank" rel="noopener" aria-label="Pinterest">Pinterest</a>
+      <a class="btn" href="mailto:soso@lasosoff.com" aria-label="Contact Me">Contact Me</a>
+    </section>
 
+    <footer>© La SoSo</footer>
+  </main>
 </body>
 </html>
